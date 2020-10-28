@@ -1,7 +1,7 @@
 FROM node:14
 WORKDIR /app
-COPY ..
+COPY . .
 RUN npm install
-SET PORT=3000
+RUN SET PORT=3000
 EXPOSE 3000
 CMD ["node", "app.js"]
